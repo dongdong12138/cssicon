@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>叉符号</title>
+  <style>
+    .cha::before {
+      content: "";
+      display: block;
+      border-top: 2px solid red;
+      width: 20px;
+      transform: rotate(45deg);
+    }
+    .cha::after {
+      content: "";
+      display: block;
+      border-top: 2px solid red;
+      width: 20px;
+      transform: rotate(-45deg);
+      margin-top: -2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cha"></div>
+</body>
+</html>

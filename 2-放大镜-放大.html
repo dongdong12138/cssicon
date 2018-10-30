@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>放大镜-放大</title>
+  <style>
+    .magnifying {
+      width: 20px;
+      height: 20px;
+      border: 1px solid red;
+      border-radius: 50%;
+      position: relative;
+    }
+    .magnifying::after {
+      content: "";
+      display: block;
+      width: 12px;
+      border-top: 1px solid red;
+      position: absolute;
+      top: 100%;
+      left: 100%;
+      transform: rotate(45deg);
+      margin-left: -4px;
+      margin-top: 1px;
+    }
+    .magnifying::before {
+      content: "+";
+      color: red;
+      position: absolute;
+      left: 4px;
+      top: -2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="magnifying"></div>
+</body>
+</html>

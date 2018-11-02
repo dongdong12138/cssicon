@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>右箭头</title>
+  <style>
+    .arrow-right {
+      width: 10px;
+      height: 10px;
+      border: 2px solid red;
+      transform: rotate(45deg);
+      border-left: none;
+      border-bottom: none;
+    }
+    .arrow-right::after {
+      content: "";
+      display: block;
+      width: 20px;
+      border-top: 1px solid red;
+      transform: rotate(-45deg);
+      margin-left: -6px;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="arrow-right"></div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>上箭头</title>
+  <style>
+    .arrow-up {
+      width: 20px;
+      height: 20px;
+      border: 2px solid red;
+      transform: rotate(45deg);
+      border-bottom: none;
+      border-right: none;
+    }
+    .arrow-up::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 30px;
+      border: 1px solid red;
+      transform: rotate(-45deg);
+      margin-left: 10px;
+      margin-top: -5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="arrow-up"></div>
+</body>
+</html>

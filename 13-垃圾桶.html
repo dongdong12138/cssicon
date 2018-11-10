@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>垃圾桶</title>
+  <style>
+    .trash {
+      width: 18px;
+      height: 20px;
+      border: 1px solid red;
+      border-radius: 0 0 2px 2px;
+      border-top: none;
+      position: relative;
+      left: 19px;
+      top: 20px;
+    }
+    .trash::before {
+      content: "";
+      width: 27px;
+      height: 1px;
+      background: red;
+      position: absolute;
+      left: -4px;
+      top: -4px;
+    }
+    .trash::after {
+      content: "";
+      width: 16px;
+      height: 4px;
+      border: 1px solid red;
+      position: absolute;
+      top: -8px;
+      border-radius: 4px 4px 0 0;
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="trash"></div>
+</body>
+</html>

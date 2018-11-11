@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>麦克风</title>
+  <style>
+    .audio {
+      width: 18px;
+      height: 14px;
+      border: 2px solid red;
+      border-radius: 0 0 50% 50%;
+      border-top: none;
+      position: relative;
+      left: 20px;
+      top: 20px;
+    }
+    .audio::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      left: 2px;
+      width: 10px;
+      height: 20px;
+      border: 2px solid red;
+      border-radius: 8px;
+    }
+    .audio::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 8px;
+      width: 2px;
+      height: 8px;
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="audio"></div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>定位图标</title>
+  <style>
+    .pin {
+      width: 24px;
+      height: 24px;
+      border: 2px solid red;
+      border-radius: 50% 50% 50% 0;
+      transform: rotate(-45deg);
+      position: relative;
+    }
+    .pin::after {
+      content: "";
+      position: absolute;
+      left: 25%;
+      top: 25%;
+      width: 8px;
+      height: 8px;
+      border: 2px solid red;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="pin"></div>
+</body>
+</html>

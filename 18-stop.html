@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>禁止标志</title>
+  <style>
+    .stop {
+      width: 30px;
+      height: 30px;
+      border: 2px solid red;
+      border-radius: 50%;
+    }
+    .stop::after {
+      content: "";
+      display: block;
+      width: 34px;
+      height: 2px;
+      background: red;
+      transform: rotate(45deg);
+      margin-top: 14px;
+      margin-left: -2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="stop"></div>
+</body>
+</html>

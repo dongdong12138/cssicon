@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>时钟1</title>
+  <style>
+    .clock {
+      width: 30px;
+      height: 30px;
+      border: 2px solid red;
+      border-radius: 50%;
+    }
+    .clock::after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      border: 2px solid red;
+      border-top: none;
+      border-right: none;
+      margin-left: 13px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="clock"></div>
+</body>
+</html>

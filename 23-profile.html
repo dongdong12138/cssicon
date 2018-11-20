@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>联系人</title>
+  <style>
+    .profile {
+      width: 28px;
+      height: 12px;
+      border: 2px solid red;
+      border-bottom: none;
+      border-radius: 12px 12px 0 0;
+      margin-top: 40px;
+    }
+    .profile::after {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+      border: 2px solid red;
+      border-radius: 50%;
+      margin-top: -21px;
+      margin-left: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile"></div>
+</body>
+</html>

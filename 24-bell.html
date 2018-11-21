@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>铃铛</title>
+  <style>
+    .bell {
+      width: 18px;
+      height: 20px;
+      border: 1px solid red;
+      border-radius: 10px 10px 0 0;
+      position: relative;
+    }
+    .bell::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -15px;
+      top: 100%;
+      width: 30px;
+      height: 1px;
+      background: red;
+    }
+    .bell::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -4px;
+      top: 100%;
+      margin-top: 3px;
+      width: 6px;
+      height: 6px;
+      border: 1px solid red;
+      border-radius: 0 0 3px 3px;
+      border-top: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="bell"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>link</title>
+  <style>
+    .link {
+      width: 14px;
+      height: 2px;
+      background: red;
+      transform: rotate(-45deg);
+      position: relative;
+      left: 20px;
+      top: 20px;
+    }
+    .link::before {
+      content: "";
+      position: absolute;
+      left: -102%;
+      top: -6px;
+      width: 16px;
+      height: 10px;
+      border: 2px solid red;
+      border-radius: 4px;
+    }
+    .link::after {
+      content: "";
+      position: absolute;
+      left: 56%;
+      top: -6px;
+      width: 16px;
+      height: 10px;
+      border: 2px solid red;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="link"></div>
+</body>
+</html>

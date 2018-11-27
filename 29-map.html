@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>map</title>
+  <style>
+    .map {
+      width: 8px;
+      height: 20px;
+      border: 1px solid red;
+      border-radius: 2px;
+      transform: skewY(20deg);
+      position: relative;
+      left: 20px;
+      top: 10px;
+    }
+    .map::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 3px;
+      width: 8px;
+      height: 20px;
+      border: 1px solid red;
+      border-radius: 2px;
+      transform: skewY(-40deg);
+    }
+    .map::after {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: -5px;
+      width: 8px;
+      height: 20px;
+      border: 1px solid red;
+      border-radius: 2px;
+      transform: skewY(-40deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="map"></div>
+</body>
+</html>

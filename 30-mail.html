@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>邮件</title>
+  <style>
+    .mail {
+      width: 30px;
+      height: 20px;
+      border: 1px solid red;
+      border-radius: 2px;
+    }
+    .mail::before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 18px;
+      background: red;
+      transform: rotate(-60deg);
+      margin-top: -4px;
+      margin-left: 7px;
+    }
+    .mail::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 18px;
+      background: red;
+      transform: rotate(60deg);
+      margin-left: 22px;
+      margin-top: -18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="mail"></div>
+</body>
+</html>

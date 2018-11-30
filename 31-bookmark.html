@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>bookmark</title>
+  <style>
+    .bookmark {
+      width: 20px;
+      height: 30px;
+      border: 1px solid red;
+      border-radius: 2px;
+      border-bottom-color: transparent;
+    }
+    .bookmark::after {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 14px;
+      border: 1px solid red;
+      transform: rotate(45deg);
+      margin-top: 22px;
+      margin-left: 2.5px;
+      border-bottom: none;
+      border-right: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="bookmark"></div>
+</body>
+</html>

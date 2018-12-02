@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>焦点框</title>
+  <style>
+    body {
+      background: #fff;
+    }
+    .focus {
+      width: 30px;
+      height: 30px;
+      border: 1px solid red;
+      border-radius: 2px;
+      position: relative;
+    }
+    .focus::before {
+      content: "";
+      width: 18px;
+      height: 38px;
+      background: green;
+      position: absolute;
+      left: 50%;
+      margin-left: -9px;
+      top: -4px;
+      background: #fff;
+    }
+    .focus::after {
+      content: "";
+      position: absolute;
+      left: -4px;
+      top: 50%;
+      margin-top: -9px;
+      width: 38px;
+      height: 18px;
+      background: #fff;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="focus"></div>
+</body>
+</html>

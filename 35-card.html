@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Card</title>
+  <style>
+    .card {
+      width: 30px;
+      height: 20px;
+      border: 1px solid red;
+      border-radius: 2px;
+      position: relative;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: 3px;
+      width: 32px;
+      height: 4px;
+      background: red;
+    }
+    .card::after {
+      content: "";
+      position: absolute;
+      right: 2px;
+      bottom: 4px;
+      width: 8px;
+      height: 2px;
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="card"></div>
+</body>
+</html>

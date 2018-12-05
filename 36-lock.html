@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>lock</title>
+  <style>
+    .lock {
+      width: 26px;
+      height: 12px;
+      border: 1px solid red;
+      border-radius: 2px;
+      position: relative;
+      left: 10px;
+      top: 20px;
+    }
+    .lock::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -6px;
+      bottom: 100%;
+      width: 10px;
+      height: 12px;
+      border: 1px solid red;
+      border-radius: 8px 8px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="lock"></div>
+</body>
+</html>

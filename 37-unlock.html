@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>unlock</title>
+  <style>
+    .unlock {
+      width: 26px;
+      height: 12px;
+      border: 2px solid red;
+      border-radius: 2px;
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+    .unlock::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -8px;
+      bottom: 100%;
+      margin-bottom: -px;
+      width: 12px;
+      height: 10px;
+      border: 2px solid red;
+      border-radius: 50% 50% 0 0;
+      border-right: 2px solid transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="unlock"></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>code</title>
+  <style>
+    .code {
+      width: 12px;
+      height: 12px;
+      border: 1px solid red;
+      transform: rotate(45deg);
+      border-top: none;
+      border-right: none;
+      position: relative;
+    }
+    .code::after {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: -9px;
+      width: 12px;
+      height: 12px;
+      border: 1px solid red;
+      border-left: none;
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="code"></div>
+</body>
+</html>

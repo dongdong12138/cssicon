@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>flag</title>
+  <style>
+    .flag {
+      width: 18px;
+      height: 12px;
+      border: 2px solid red;
+      border-radius: 2px;
+      position: relative;
+      left: 10px;
+    }
+    .flag::after {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: -2px;
+      width: 2px;
+      height: 30px;
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="flag"></div>
+</body>
+</html>

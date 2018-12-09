@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>tag</title>
+  <style>
+    .tag {
+      width: 14px;
+      height: 14px;
+      border: 1px solid red;
+      border-right: none;
+      border-bottom: none;
+      border-radius: 2px 0 0 0;
+      position: relative;
+    }
+    .tag::after {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 4px;
+      width: 19px;
+      height: 20px;
+      border: 1px solid red;
+      transform: rotate(-45deg);
+      border-top: none;
+    }
+    .tag::before {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      width: 4px;
+      height: 4px;
+      background: red;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="tag"></div>
+</body>
+</html>

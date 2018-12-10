@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>signal</title>
+  <style>
+    .signal {
+      width: 12px;
+      height: 12px;
+      border-top: 2px solid red;
+      border-left: 2px solid transparent;
+      border-right: 2px solid transparent;
+      border-radius: 50%;
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+    .signal::before {
+      content: "";
+      position: absolute;
+      left: -9.5px;
+      top: -9px;
+      width: 28px;
+      height: 28px;
+      border-top: 2px solid red;
+      border-right: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-radius: 50%;
+    }
+    .signal::after {
+      content: "";
+      position: absolute;
+      left: -17.5px;
+      top: -17px;
+      width: 44px;
+      height: 44px;
+      border-top: 2px solid red;
+      border-right: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="signal"></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>upload</title>
+  <style>
+    .upload {
+      width: 26px;
+      height: 8px;
+      border: 2px solid red;
+      border-radius: 2px;
+      border-top: none;
+      position: relative;
+      top: 20px;
+    }
+    .upload::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -1px;
+      top: -14px;
+      width: 2px;
+      height: 18px;
+      background: red;
+    }
+    .upload::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -5px;
+      top: -14px;
+      width: 8px;
+      height: 8px;
+      border: 2px solid red;
+      transform: rotate(45deg);
+      border-bottom: none;
+      border-right: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="upload"></div>
+</body>
+</html>

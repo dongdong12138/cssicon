@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>shutdown</title>
+  <style>
+    body {
+      background: #fff;
+    }
+    .shutdown {
+      width: 26px;
+      height: 26px;
+      border: 2px solid red;
+      border-radius: 50%;
+      position: relative;
+      margin: 50px;
+    }
+    .shutdown::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -7px;
+      top: -30%;
+      width: 2px;
+      height: 18px;
+      background: red;
+      border-left: 6px solid #fff;
+      border-right: 6px solid #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="shutdown"></div>
+</body>
+</html>

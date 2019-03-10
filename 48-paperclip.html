@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>回形针</title>
+  <style>
+    .paperclip {
+      width: 12px;
+      height: 24px;
+      border: 2px solid red;
+      margin: 50px;
+      border-radius: 8px 8px 0 0;
+      transform: rotate(45deg);
+      border-bottom: none;
+      position: relative;
+    }
+    .paperclip::before {
+      content: "";
+      position: absolute;
+      left: -2px;
+      top: 100%;
+      margin-top: -1px;
+      width: 8px;
+      height: 12px;
+      border: 2px solid red;
+      border-top: none;
+      border-radius: 0 0 6px 6px;
+    }
+    .paperclip::after {
+      content: "";
+      position: absolute;
+      left: 25%;
+      margin-left: -1px;
+      top: 2px;
+      width: 4px;
+      height: 20px;
+      border: 2px solid red;
+      border-bottom: none;
+      border-radius: 8px 8px 0 0 ;
+    }
+  </style>
+</head>
+<body>
+  <div class="paperclip"></div>
+</body>
+</html>

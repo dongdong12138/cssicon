@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>段落方向</title>
+  <style>
+    body {
+      background: #fff;
+    }
+    .paragraph-direction {
+      width: 34px;
+      height: 16px;
+      border: 2px solid red;
+      border-left: none;
+      border-right: none;
+      position: relative;
+    }
+    .paragraph-direction::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 32px;
+      height: 4px;
+      border: 2px solid red;
+      border-left: none;
+      border-radius: 0 4px 4px 0;
+    }
+    .paragraph-direction::after {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: 7px;
+      width: 0;
+      height: 0;
+      border: 4px solid red;
+      border-left-color: white;
+      border-top-color: white;
+      border-bottom-color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="paragraph-direction"></div>
+</body>
+</html>

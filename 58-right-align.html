@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>右对齐</title>
+  <style>
+    .right-align {
+      width: 34px;
+      height: 10px;
+      border: 2px solid red;
+      border-left: none;
+      border-right: none;
+      position: relative;
+    }
+    .right-align::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 4px;
+      width: 22px;
+      height: 10px;
+      border: 2px solid red;
+      border-left: none;
+      border-right: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="right-align"></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>伸展</title>
+  <style>
+    .outdent {
+      width: 34px;
+      height: 16px;
+      border: 2px solid red;
+      border-left: none;
+      border-right: none;
+      position: relative;
+    }
+    .outdent::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 22px;
+      height: 4px;
+      border: 2px solid red;
+      border-left: none;
+      border-right: none;
+      transform: translateY(-50%);
+    }
+    .outdent::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border: 6px solid red;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="outdent"></div>
+</body>
+</html>

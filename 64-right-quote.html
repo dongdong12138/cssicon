@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    .right-quote {
+      position: relative;
+    }
+    .right-quote::before,
+    .right-quote::after {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      border: 2px solid red;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .right-quote::after {
+      left: 18px;
+      top: 0
+    }
+    .right-quote i::before,
+    .right-quote i::after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      border: 2px solid red;
+      border-radius: 50%;
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-right: 2px solid transparent;
+      transform: rotate(-45deg);
+      position: absolute;
+      left: -12px;
+      top: -6px;
+    }
+    .right-quote i::after {
+      left: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="right-quote">
+    <i></i>
+  </div>
+</body>
+</html>

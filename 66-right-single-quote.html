@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>右单引号</title>
+  <style>
+    .right-quote {
+      width: 12px;
+      height: 12px;
+      border: 2px solid red;
+      border-radius: 50%;
+      position: relative;
+    }
+    .right-quote::after {
+      content: "";
+      display: block;
+      width: 24px;
+      height: 24px;
+      border: 2px solid red;
+      border-radius: 50%;
+      border-top: 2px solid transparent;
+      border-left: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      transform: rotate(45deg);
+      position: absolute;
+      left: -14px;
+      top: -8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="right-quote"></div>
+</body>
+</html>
